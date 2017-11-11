@@ -10,5 +10,4 @@ function checkPalindrome(inputString) {
     }
 }
 
-
 checkPalindrome("abac");
