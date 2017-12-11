@@ -7,6 +7,8 @@ function reverseInt(num){
 
     //Convert string of digits back into a number
     revdigits = parseInt(revdigits);
+
+    return revdigits;
     
 
 }
