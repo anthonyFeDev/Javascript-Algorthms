@@ -5,12 +5,12 @@ function reverseInt(num){
     //reverse the digits
     let revdigits = digits.reverse().join('');
 
-    //Convert string of digits back into a number
-    revdigits = parseInt(revdigits);
+    //Convert string of digits back into a number and keep the sign
+    revdigits = parseInt(revdigits) * Math.sign(num);
 
     return revdigits;
     
 
 }
 
-reverseInt(23);
+reverseInt(-23);
