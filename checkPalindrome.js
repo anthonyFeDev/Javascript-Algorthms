@@ -20,8 +20,11 @@
 // }
 
 //Solution 2
+//Utilize the every array helper
 function checkPalindrome(str){
-    
+    return str.split('').every((char, i) => {
+        return char === str[str.length - i - 1];
+    });
 }
 
 checkPalindrome("abac");
