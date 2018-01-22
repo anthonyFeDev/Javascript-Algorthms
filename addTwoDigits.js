@@ -1,11 +1,11 @@
-function addTwoDigits(n) {
-    var convertToString = n.toString();
-    var splitString = [];
-    splitString = convertToString.split();
-    
-    var stringArray = splitString 
+function sumDigits(int){
+    let digits = [];
+    let total;
 
-    console.log(splitString[0]);
-}
-
-addTwoDigits(23);
+    digits = int.toString().split('').map(Number).reduce((a, b) => {
+        total = a + b;
+        return total;
+    }); 
+    return total;
+  }
+sumDigits(23);
